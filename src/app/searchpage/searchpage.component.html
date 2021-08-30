@@ -1,52 +1,54 @@
-<h1>Github Search</h1>
-<div class="conatiner">
-    <form action="">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" [(ngModel)]="username" name="username"
-            (keyup)="findProfile()">
-        </div>
-      </form>
-</div>
-
-<div>
-    <div class="card card-edit">
-      <div class="card-header">
-        <h3>{{userInfo?.login}}</h3>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-            <div class = "card-body">
-              <img src="{{userInfo?.avatar_url}}" class="img-circle img-responsive" alt="Profile Picture">
-            </div>
-            <div class="card-footer">
-              <span>Followers: {{userInfo?.followers}}   Following: {{userInfo?.following}}</span><br><br>
-              <span>Date Created: {{userInfo?.created_at|datecount}}</span><br><br>
-              <span>Bio: {{userInfo?.bio}}</span>
-            </div>
+<div class="whole">
+  <h1>Github Search</h1>
+  <div class="conatiner">
+      <form action="">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" [(ngModel)]="username" name="username"
+              (keyup)="findProfile()">
           </div>
-          </div>
-          <div class="col-md-6 scroll">
-            <div class="card">
-              <div class="card-header">
-                <h3>Repositories</h3>
-              </div>
-              <div class="card-body" *ngFor="let repo of repoInfo">
-                <p>
-                  <a href="{{repo.html_url}}">{{repo.name}}</a>
-                </p>
-  
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer">
-  
-      </div>
-    </div>
-  
-  
+        </form>
   </div>
   
+  <div class="search">
+      <div class="card card-edit">
+        <div class="card-header">
+          <h3>{{userInfo?.login}}</h3>
+        </div>
+        <div class="card-body" style="background: url(../../assets/matt-seymour-X33y3gu2k4A-unsplash.jpg);">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+              <div class = "card-body">
+                <img src="{{userInfo?.avatar_url}}" class="img-circle img-responsive" alt="Profile Picture">
+              </div>
+              <div class="card-footer">
+                <span>Followers: {{userInfo?.followers}}   Following: {{userInfo?.following}}</span><br><br>
+                <span>Date Created: {{userInfo?.created_at|datecount}}</span><br><br>
+                <span>Bio: {{userInfo?.bio}}</span>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-6 scroll">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Repositories</h3>
+                </div>
+                <div class="card-body" *ngFor="let repo of repoInfo">
+                  <p>
+                    <a href="{{repo.html_url}}">{{repo.name}}</a>
+                  </p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+    
+        </div>
+      </div>
+    
+    
+    </div>
+    
+</div>
