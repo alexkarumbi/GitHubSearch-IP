@@ -1,7 +1,32 @@
-# GithubSearch
+# Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
+## Description
+{This is a website which I have been able to design on my own ability .This is a site which allows you to search for github users}
+
+## By
+* Alex Karumbi Muhia
+
+## Setup/Installation Requirements
+Make sure your device has internet connectivity
+Clone the repository using the following link https://github.com/alexkarumbi/GitHubSearch-IP
+Open you browser
+Browse through the website
+## Known Bugs
+{There are no known bugs}
+
+## Technologies used
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* TYpescript
+## Support and Contact deatials
+{Contact me through:alex.muhia@student.moringaschool.com}
+
+## License
+{[MIT License] Copyright@2021 Alex Karumbi}
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
