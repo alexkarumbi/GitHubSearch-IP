@@ -9,7 +9,7 @@ import { UserInfo } from '../user-info';
 })
 export class SearchpageComponent implements OnInit {
 
-  repoInfo:any;
+  repoInfo!:any;
   username!: string;
   userInfo!: UserInfo;
 
