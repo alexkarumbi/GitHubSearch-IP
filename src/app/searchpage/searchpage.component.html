@@ -1,4 +1,9 @@
 <h1>Github Search</h1>
 <div class="conatiner">
-    
+    <form action="">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" [(ngModel)]="username" name="username"
+            (keyup)="findProfile()">
+        </div>
+      </form>
 </div>
