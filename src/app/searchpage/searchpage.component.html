@@ -7,3 +7,46 @@
         </div>
       </form>
 </div>
+
+<div>
+    <div class="card card-edit">
+      <div class="card-header">
+        <h3>{{userInfo?.login}}</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+            <div class = "card-body">
+              <img src="{{userInfo?.avatar_url}}" class="img-circle img-responsive" alt="Profile Picture">
+            </div>
+            <div class="card-footer">
+              <span>Followers: {{userInfo?.followers}}   Following: {{userInfo?.following}}</span><br><br>
+              <span>Date Created: {{userInfo?.created_at|datepipe}}</span><br><br>
+              <span>Bio: {{userInfo?.bio}}</span>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-6 scroll">
+            <div class="card">
+              <div class="card-header">
+                <h3>Repositories</h3>
+              </div>
+              <div class="card-body" *ngFor="let repo of repoInfo">
+                <p>
+                  <a href="{{repo.html_url}}">{{repo.name}}</a>
+                </p>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+  
+      </div>
+    </div>
+  
+  
+  </div>
+  
